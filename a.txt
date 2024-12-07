@@ -1,0 +1,1000 @@
+  946  systemctl restart apache2
+  947  netstat -lnpt | grep :80
+  948  ls
+  949  systemctl status apache2
+  950  sudo vi /lib/systemd/system/apache2.service
+  951  sudo vi /etc/apache2/sites-available/learning.corecard.in.conf 
+  952  ls
+  953  sudo vi bakuplearning.corecard.in.conf
+  954  systemctl restart apache2
+  955  systemctl status apache2
+  956  ls
+  957  cd /etc/apache2/
+  958  ls
+  959  cd sites-available/
+  960  ls
+  961  sudo cat 000-default.conf 
+  962  sudo cat default-ssl.conf 
+  963  cd /etc/apache2/conf-available/
+  964  ls
+  965  vim ssl-params.conf 
+  966  cd ..
+  967  cd sites-available/
+  968  ls 0-ltr
+  969  vim learning.corecard.in
+  970  vim learning.corecard.in.conf 
+  971  cd /etc/certificate/
+  972  ls -ltr 
+  973  ls
+  974  sudo cp -a /home/soheb/Desktop/corecard.in.pfx /etc/certificate/
+  975  ls
+  976  pkcs12 -in "corecard.in.pfx" -nocerts -out private.key -nodes
+  977  sudo yum install pkcs12
+  978  sudo yum install openssl
+  979  openssl --version
+  980  openssl -version
+  981  Openssl -version
+  982  Openssl pkcs12 -in "corecard.in.pfx" -nocerts -out private.key -nodes
+  983  apt install openssl
+  984  openssl -version
+  985  Openssl pkcs12 -in "corecard.in.pfx" -nocerts -out private.key -nodes
+  986  /usr/bin/Openssl pkcs12 -in "corecard.in.pfx" -nocerts -out private.key -nodes
+  987  cd /usr/bin/
+  988  ls
+  989  openssl pkcs12 -in "corecard.in.pfx" -nocerts -out private.key -nodes
+  990  openssl pkcs12 -in /etc/certificate/corecard.in.pfx -nocerts -out private.key -nodes
+  991  ls
+  992  sudo cp -a private.key /etc/certificate/private_new.key 
+  993  cd /etc/apache2/
+  994  ls
+  995  cd sites-available/
+  996  ls
+  997  sudo vi learning.corecard.in.conf 
+  998  ls
+  999  sudo cp -a learning.corecard.in.conf learning.corecard.in.conf_25Aug2022_working
+ 1000  sudo vi learning.corecard.in.conf 
+ 1001  systemctl restart apache2
+ 1002  systemctl status apache2
+ 1003  systemctl status apache2 -l
+ 1004  cd /var/log/
+ 1005  ls
+ 1006  cd apache2/
+ 1007  ls
+ 1008  sudo tail -f access.log
+ 1009  ls
+ 1010  history
+ 1011  a2enconf ssl-params
+ 1012  a2enmod headers
+ 1013  a2ensite default-ssl
+ 1014  a2ensite learning.corecard.in.conf
+ 1015  apache2ctl configtest
+ 1016  sudo vim /etc/apache2/sites-enabled/learning.corecard.in.conf
+ 1017  apache2ctl configtest
+ 1018  systemctl restart apache2
+ 1019  systemctl status apache2
+ 1020  cd /var/www/html
+ 1021  ls
+ 1022  cd moodle
+ 1023  ls
+ 1024  vi config.php
+ 1025  vim /etc/ssh/sshd_config
+ 1026  ipconfig 
+ 1027  ip add
+ 1028  ls -ltr 
+ 1029  openssl version
+ 1030  vim /etc/apache2/conf-available/ssl-params.conf
+ 1031  cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/bakupdefultssl.conf
+ 1032  vim /etc/apache2/site-available/defult-ssl.conf
+ 1033  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1034  cp  /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/bakup25augestdefault-ssl.conf
+ 1035  cp  /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/workingbakup25augestdefault-ssl.conf
+ 1036  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1037  cat /etc/apache2/sites-enabled/learning.corecard.in.conf 
+ 1038  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1039  cat /etc/apache2/sites-enabled/learning.corecard.in.conf 
+ 1040  cd /var/www/html
+ 1041  ls
+ 1042  cd moodle
+ 1043  ls
+ 1044  vi config.php 
+ 1045  cd ..
+ 1046  ls
+ 1047  cd ..
+ 1048  ls
+ 1049  cd ..
+ 1050  ls
+ 1051  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1052  cat /etc/apache2/sites-enabled/learning.corecard.in.conf 
+ 1053  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1054  cd  /var/www/html
+ 1055  ls
+ 1056  sudo vi index.html 
+ 1057  sudo vim index.html 
+ 1058  cd moodle
+ 1059  ls
+ 1060  sudo vi index.php 
+ 1061  exit
+ 1062  cd /etc/apache2/
+ 1063  sudo cat 000-default.conf 
+ 1064  cd sites-available/
+ 1065  sudo vi 000-default.conf 
+ 1066  systemctl restart apache2
+ 1067  systemctl status apache2
+ 1068  sudo vi 000-default.conf 
+ 1069  systemctl restart apache2
+ 1070  systemctl status apache2
+ 1071  apache2ctl configtest
+ 1072  history
+ 1073  sudo vi /etc/apache2/sites-enabled/learning.corecard.in.conf
+ 1074  history
+ 1075  historyvim /etc/apache2/sites-available/default-ssl.conf
+ 1076  vim /etc/apache2/sites-available/default-ssl.conf
+ 1077  systemctl restart apache2
+ 1078  systemctl status apache2
+ 1079  sudo vi /etc/apache2/sites-enabled/default-ssl.conf 
+ 1080  sudo vi /etc/apache2/sites-enabled/000-default.conf 
+ 1081  sudo vi /etc/apache2/sites-enabled/learning.corecard.in.conf 
+ 1082  sudo vi /etc/apache2/sites-enabled/000-default.conf 
+ 1083  sudo vi /etc/apache2/sites-enabled/default-ssl.conf 
+ 1084  systemctl restart apache2
+ 1085  systemctl status apache2
+ 1086  sudo vi /etc/apache2/sites-enabled/default-ssl.conf 
+ 1087  sudo vi /etc/apache2/sites-enabled/000-default.conf 
+ 1088  exit
+ 1089  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1090  vim /etc/apache2/sites-available/000-default.conf 
+ 1091  vim /etc/apache2/sites-available/default-ssl.conf 
+ 1092  vim /etc/apache2/sites-available/000-default.conf 
+ 1093  apache2ctl configtest
+ 1094  systemctl restart apache2
+ 1095  systemctl status apache2
+ 1096  !
+ 1097  cd /etc/certificate/
+ 1098  ls -ltr 
+ 1099  mkdir /home/soheb/learning.corecard.in_working_certificate
+ 1100  cp private_new.key /home/soheb/learning.corecard.in_working_certificate/
+ 1101  cp corecard.in.pfx /home/soheb/learning.corecard.in_working_certificate/
+ 1102  cat /etc/apache2/sites-available/learning.corecard.in
+ 1103  cat /etc/apache2/sites-available/learning.corecard.in.conf
+ 1104  cp /etc/certificate/learning.corecard.crt /home/soheb/learning.corecard.in_working_certificate//etc/certificate/SSLcertificate_filelearning.corecard.crt
+ 1105  cp /etc/certificate/learning.corecard.crt /home/soheb/learning.corecard.in_working_certificate/SSLCertificateFile_learning.corecard.crt
+ 1106  ls -ltr 
+ 1107  https://learning.corecard.in
+ 1108  cd /var/www/html/
+ 1109  cd moodle
+ 1110  vi config.php
+ 1111  history 
+ 1112  cp /etc/apache2/sites-available/default-ssl.conf /home/soheb/learning.corecard.in_working_certificate/
+ 1113  cp /etc/apache2/sites-available/000-default.conf  /home/soheb/learning.corecard.in_working_certificate/
+ 1114  cp /etc/apache2/sites-enabled/learning.corecard.in.conf /home/soheb/learning.corecard.in_working_certificate/
+ 1115  ls -ltr 
+ 1116  cd /usr/bin/
+ 1117  ls -ltr 
+ 1118  apachectl -s
+ 1119  apachectl -S
+ 1120  cd /var/www/html
+ 1121  ls
+ 1122  cd moodle
+ 1123  ls
+ 1124  vi config.php
+ 1125  cd ..
+ 1126  ls
+ 1127  cd ..
+ 1128  ls
+ 1129  cd ..
+ 1130  ls
+ 1131  cd /etc/apache2
+ 1132  ls
+ 1133  cd sites-available/
+ 1134  ls
+ 1135  cd ..
+ 1136  cd sites-enabled/
+ 1137  ls
+ 1138  cd ..
+ 1139  cd sites-available/
+ 1140  vi learning.corecard.in.conf
+ 1141  sudo systemctl restart apache2
+ 1142  cd /etc/apache2
+ 1143  ls
+ 1144  cd sites-enabled/
+ 1145  ls
+ 1146  vi learning.corecard.in.conf
+ 1147  cd ..
+ 1148  cd certificate/
+ 1149  ls
+ 1150  cd /etc/apache2
+ 1151  cd sites-enabled/
+ 1152  vi learning.corecard.in.conf
+ 1153  cd sites-available/
+ 1154  cd ..
+ 1155  cd sites-available/
+ 1156  vi learning.corecard.in.conf
+ 1157  sudo systemctl restart apache2
+ 1158  sudo a2ensite learning.corecard.in
+ 1159  vim /home/soheb/learning.corecard.in_working_certificate/apachectl-S
+ 1160  cd /home/soheb/
+ 1161  ls -ltr
+ 1162  cd learning.corecard.in_working_certificate/
+ 1163  ls -ltr
+ 1164  ls -ltr /root/
+ 1165  ls -ltr /tmp/cert/
+ 1166  cd ..
+ 1167  ls -ltr 
+ 1168  cd /etc/certificate/
+ 1169  ls -ltr
+ 1170  cp private_new.key /tmp/cert/
+ 1171  exit
+ 1172  cd /etc/certificate/
+ 1173  ls -ltr
+ 1174  scp private_new.key root@10.206.1.25:/tmp
+ 1175  cd /etc/apache2
+ 1176  ls
+ 1177  cd conf-enabled
+ 1178  ls
+ 1179  vi security.conf 
+ 1180  cd /etc/apache2/mods-enabled/
+ 1181  ls
+ 1182  ln -s ../mods-available/headers.load headers.load
+ 1183  ln -s ../mods-available/headers.load
+ 1184  ln -s ../mods-available/headers.load headers.load
+ 1185  sudo systemctl restart apache2
+ 1186  ln -s ../mods-available/headers.load headers.load
+ 1187  vi security.conf 
+ 1188  cd conf-enabled
+ 1189  cd ..
+ 1190  cd conf-enabled
+ 1191  vi security.conf 
+ 1192  vim /etc/apache2/sites-available/learning.corecard.in.conf
+ 1193  vim /etc/apache2/sites-available/000-default.conf 
+ 1194  vi security.conf 
+ 1195  cd /etc/apache2/mods-enabled/
+ 1196  vi security.conf 
+ 1197  cd conf-enabled
+ 1198  ls
+ 1199  cd ..
+ 1200  ls
+ 1201  cd mods-available/
+ 1202  ls
+ 1203  cd ..
+ 1204  cd mods-enabled/
+ 1205  ls
+ 1206  cd ..
+ 1207  cd conf-enabled/
+ 1208  vi security.conf 
+ 1209  sudo systemctl restart apache2
+ 1210  vi security.conf 
+ 1211  sudo systemctl restart apache2
+ 1212  vi security.conf 
+ 1213  cd ..
+ 1214  ls
+ 1215  vi apache2.conf 
+ 1216  sudo systemctl restart apache2
+ 1217  cd /etc/apache2
+ 1218  ls
+ 1219  cd sites-available/
+ 1220  ls
+ 1221  cd ..
+ 1222  ls
+ 1223  ls conf
+ 1224  cd sites-available/
+ 1225  ls
+ 1226  vi learning.corecard.in.conf
+ 1227  cd ..
+ 1228  ls
+ 1229  cd certificate/
+ 1230  ls
+ 1231  cd ..
+ 1232  cd apache2/
+ 1233  ls
+ 1234  cd conf-available/
+ 1235  ls
+ 1236  cd ..
+ 1237  cd sites-available/
+ 1238  ls
+ 1239  vi learning.corecard.in.conf
+ 1240  cd /var/www/
+ 1241  ls
+ 1242  cd html
+ 1243  cd moodle
+ 1244  vi config.php
+ 1245  history 
+ 1246  vim /etc/apache2/sites-available/learning.corecard.in.conf
+ 1247  vim /etc/apache2/sites-available/000-default.conf
+ 1248  vi learning.corecard.in.conf
+ 1249  vim /etc/apache2/sites-available/learning.corecard.in.conf
+ 1250  cd /etc/
+ 1251  ls
+ 1252  cd apache2
+ 1253  ls
+ 1254  vi apache2.conf 
+ 1255  cd mods-available/
+ 1256  ls
+ 1257  vi http2.conf
+ 1258  cd ..
+ 1259  cd sites-available/
+ 1260  ls
+ 1261  vi learning.corecard.in.conf
+ 1262  cd ..
+ 1263  cd mods-enabled/
+ 1264  ls
+ 1265  vi ssl.conf 
+ 1266  cd ..
+ 1267  ls
+ 1268  cd conf-enabled/
+ 1269  ls
+ 1270  vi security.conf 
+ 1271  sudo systemctl restart apache2
+ 1272  vi security.conf 
+ 1273  sudo systemctl restart apache2
+ 1274  vi security.conf 
+ 1275  sudo systemctl restart apache2
+ 1276  vi security.conf 
+ 1277  sudo systemctl restart apache2
+ 1278  vi security.conf 
+ 1279  sudo systemctl restart apache2
+ 1280  systemctl restart apache2
+ 1281  sudo service apache2 restart
+ 1282  sudo systemctl restart apache2
+ 1283  vi security.conf 
+ 1284  sudo systemctl restart apache2
+ 1285  vi security.conf 
+ 1286  sudo systemctl restart apache2
+ 1287  vi security.conf 
+ 1288  sudo systemctl restart apache2
+ 1289  cd /etc/apache2/conf-enabled/
+ 1290  vi security.conf 
+ 1291  sudo systemctl restart apache2
+ 1292  cd /var/www/html/
+ 1293  ls
+ 1294  cd tds
+ 1295  cd TDS
+ 1296  cd ..
+ 1297  cd moodle
+ 1298  vi learning_report.php
+ 1299  ls
+ 1300  cd /etc/apache2/
+ 1301  ls -ltr
+ 1302  cd ..
+ 1303  du -sh*
+ 1304  du -sh *
+ 1305  cd /
+ 1306  cat /etc/apache2/sites-enabled/learning.corecard.in.conf 
+ 1307  cat /etc/apache2/sites-enabled/default-ssl.conf 
+ 1308  cat /etc/apache2/sites-enabled/000-default.conf 
+ 1309  nano /etc/ssh/sshd_config
+ 1310  systemctl restart sshd
+ 1311  systemctl status sshd
+ 1312  exit
+ 1313  cls
+ 1314  clear
+ 1315  sudo su
+ 1316  exit
+ 1317  cd\etc
+ 1318  \cd
+ 1319  \etc
+ 1320  /cd/etc
+ 1321  exit
+ 1322  passwd root
+ 1323  nano /etc/ssh/sshd_config
+ 1324  systemctl restart sshd
+ 1325  systemctl status sshd
+ 1326  nano /etc/ssh/sshd_config
+ 1327  systemctl restart sshd
+ 1328  passwd
+ 1329  passwd root
+ 1330  sudo su
+ 1331  /cd
+ 1332  -$ cd/etc/certificate/
+ 1333  sudo -
+ 1334  cd /etc/certificate/
+ 1335  is
+ 1336  is ?
+ 1337  cd /etc/certificate/ is
+ 1338  ls
+ 1339  ls -lrth 
+ 1340  mv corecard.in.pfx corecard.in.pfx_old
+ 1341  mv wildcard.corecard.com2024.pfx corecard.in.pfx
+ 1342  ls
+ 1343  ls -lrth 
+ 1344  history
+ 1345  systemctl ststus httpd
+ 1346  systemctl status httpd
+ 1347  history
+ 1348  sudo systemctl restart apache2
+ 1349  sudo systemctl status apache2
+ 1350  cd /etc/hosts
+ 1351  cd /var/www/
+ 1352  ls
+ 1353  cd /var/www/html/
+ 1354  ls
+ 1355  apachectl status
+ 1356  cat index.html 
+ 1357  cd /
+ 1358  cd /etc/certificate/
+ 1359  ls 
+ 1360  ls -ltr
+ 1361  ls -ltrh
+ 1362  chmod 554 corecard.in.pfx
+ 1363  ls -ltrh
+ 1364  chmod 664 corecard.in.pfx
+ 1365  ls -ltrh
+ 1366  systemctl restart apache2
+ 1367  systemctl status apache2
+ 1368  systemctl restart apache2
+ 1369  cd /etc/apache2/
+ 1370  ls
+ 1371  cd sites-enabled/
+ 1372  ls
+ 1373  cat learning.corecard.in.conf 
+ 1374  cd /etc/certificate/
+ 1375  ls 
+ 1376  cd /etc/apache2/
+ 1377  ls
+ 1378  cd sites-enabled/
+ 1379  ls
+ 1380  vi learning.corecard.in.conf 
+ 1381  ls -ltr
+ 1382  ls -ltrh
+ 1383  vim learning.corecard.in.conf 
+ 1384  cd /etc/certificate
+ 1385  ls -ltrh
+ 1386  cd /etc/apache2/sites-enabled/
+ 1387  vim learning.corecard.in.conf 
+ 1388  cp learning.corecard.in.conf learning.corecard.in.conf_bkup
+ 1389  ll
+ 1390  vim learning.corecard.in.conf
+ 1391  systemctl restart apache2.service 
+ 1392  systemctl stop apache2
+ 1393  systemctl start apache2
+ 1394  vim learning.corecard.in.conf
+ 1395  systemctl restart apache2.service 
+ 1396  systemctl restart apache2
+ 1397  httpd -v
+ 1398  vim learning.corecard.in.conf
+ 1399  cat /etc/redhat-release
+ 1400  lsb_release -a
+ 1401  ls -ltrh /etc/certificate/
+ 1402  chmod 777 new_learning.corecard.in.crt
+ 1403  chmod 777 /etc/certificate/new_learning.corecard.in.crt 
+ 1404  cd /etc/certificate/
+ 1405  mv learning.corecard.crt learning.corecard.crt_old
+ 1406  mv new_learning.corecard.in.crt learning.corecard.crt
+ 1407  mv gd_bundle-g2-g1.crt gd_bundle-g2-g1.crt_old
+ 1408  mv gd_bundle-g2-g1_new.crt gd_bundle-g2-g1.crt
+ 1409  mv private_new.key private_new.key_old
+ 1410  mv newCERT,PEM.pem private_new.key
+ 1411  ls -ltrh
+ 1412  mv learning.corecard.pem learning.corecard.pem_ol
+ 1413  systemctl restart apache2
+ 1414  journalctl -xe
+ 1415  ls -ltrh
+ 1416  mv learning.corecard.pem_ol learning.corecard.pem
+ 1417  systemctl restart apache2
+ 1418  systemctl status apache2
+ 1419  systemctl stop apache2
+ 1420  systemctl status apache2
+ 1421  mv private_new.key newCERT,PEM.pem
+ 1422  ls ltrh 
+ 1423  ls -ltrh
+ 1424  mv learning.corecard.crt new_learning.corecard.crt
+ 1425  mv learning.corecard.crt_old learning.corecard.crt
+ 1426  mv private_new.key_old private_new.key
+ 1427  mv gd_bundle-g2-g1.crt gd_bundle-g2-g1_new.crt
+ 1428  mv gd_bundle-g2-g1.crt_old
+ 1429  mv gd_bundle-g2-g1.crt_old gd_bundle-g2-g1.crt
+ 1430  ls -ltrh
+ 1431  systemctl restart apache2
+ 1432  cd ..
+ 1433  cp certificate certificate_bkup
+ 1434  cp -r certificate certificate_bkup
+ 1435  cd certificate
+ 1436  ls -ltrh
+ 1437  rm new_learning.corecard.crt 
+ 1438  rm newCERT,PEM.pem 
+ 1439  rm gd_bundle-g2-g1_new.crt 
+ 1440  rm corecard.in.pfx
+ 1441  ls -ltrh
+ 1442  chmod 777 new_16bea7bd6a812fe9.crt 
+ 1443  cd /etc/apache2/sites-enabled/
+ 1444  ls
+ 1445  vim learning.corecard.in.conf
+ 1446  systemctl status apache2
+ 1447  systemctl stop apache2
+ 1448  systemctl start apache2
+ 1449  less /var/log/
+ 1450  cd /var/log/
+ 1451  ls
+ 1452  cd apache2/
+ 1453  ls
+ 1454  less error.log
+ 1455  vi /etc/apache2/sites-enabled/learning.corecard.in.conf
+ 1456  cd /etc/apache2/sites-enabled/
+ 1457  ls
+ 1458  mv learning.corecard.in.conf learning.corecard.in.conf_old
+ 1459  mv learning.corecard.in.conf_bkup learning.corecard.in.conf
+ 1460  cat learning.corecard.in.conf
+ 1461  systemctl restart apache2
+ 1462  vi /etc/certificate/16bea7bd6a812fe9.pem 
+ 1463  cat /etc/certificate/new_16bea7bd6a812fe9.crt 
+ 1464  vi /etc/certificate/16bea7bd6a812fe9.pem 
+ 1465  cat /etc/certificate/private_new.key 
+ 1466  cat /etc/certificate/gd_bundle-g2-g1.crt 
+ 1467  ls /etc/certificate
+ 1468  ls -ltr /etc/certificate
+ 1469  ls /etc
+ 1470  pwd
+ 1471  vim /etc/apache2/
+ 1472  cd /etc/apache2/
+ 1473  ls -ltr 
+ 1474  vim sites-available/
+ 1475  cd sites-available/
+ 1476  ls -ltr 
+ 1477  vim 000-default.conf 
+ 1478  vim learning.corecard.in
+ 1479  vim learning.corecard.in.conf
+ 1480  ls
+ 1481  pwd
+ 1482  cd ../
+ 1483  ls
+ 1484  cd sites-enabled
+ 1485  ls
+ 1486  ls -ltr 
+ 1487  cd ..
+ 1488  cd sites-available/
+ 1489  ls -ltr 
+ 1490  cat default-ssl.conf
+ 1491  ls -ltr 
+ 1492  cat learning.corecard.in.conf
+ 1493  ls -ltr /etc/certificate/
+ 1494  update-ca-certificates 
+ 1495  apachectl status
+ 1496  apachectl restart
+ 1497  apachectl configtest
+ 1498  vim /etc/hosts
+ 1499  cat  /etc/hosts
+ 1500  ping learning.corecard.in
+ 1501  apachectl configtest
+ 1502  vim /etc/hosts
+ 1503  apachectl restart
+ 1504  apachectl configtest
+ 1505  cd ..
+ 1506  ls -ltr 
+ 1507  cd learning.corecard.in
+ 1508  cd /etc/certificate
+ 1509  ls -lte
+ 1510  ls -ltr 
+ 1511  cat /etc/apache2/sites-enabled/learning.corecard.in.conf
+ 1512  pwd
+ 1513  ls -ltr 
+ 1514  cd  /etc/apache2/sites-enabled/learning.corecard.in.conf
+ 1515  ls -ltr 
+ 1516  pwd
+ 1517  cd /etc/apache2/sites-available/
+ 1518  ls
+ 1519  vim learning.corecard.in.conf
+ 1520  ls -ltr 
+ 1521  cd /etc/apache2/sites-enabled/
+ 1522  ls
+ 1523  mv learning.corecard.in.conf learning.corecard.in.conf_bkup
+ 1524  mv learning.corecard.in.conf_old learning.corecard.in.conf
+ 1525  ls -ltr
+ 1526  vim learning.corecard.in.conf
+ 1527  cd ..
+ 1528  cd sites-available/
+ 1529  ls -ltr 
+ 1530  cp learning.corecard.in.conf 17aprai2023bakuplearning.corecard.in.conf
+ 1531  vim learning.corecard.in
+ 1532  vim learning.corecard.in.conf
+ 1533  ls -ltr /etc/certificate/
+ 1534  vim /etc/apache2/sites-available/learning.corecard.in.conf
+ 1535  apache2ctl configtest
+ 1536  systemctl restart apache2
+ 1537  systemctl status apache2
+ 1538  grep -i "SSL Certficate"
+ 1539  cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/bakupdefultssl.conf
+ 1540  update-ca-certificates 
+ 1541  cd /etc/ssl/certs/
+ 1542  ls -ltr 
+ 1543  apache2ctl configtest
+ 1544  systemctl restart apache2
+ 1545  systemctl status apache2
+ 1546  curl learning.corecard.in
+ 1547  ls -ltr 
+ 1548  cd ..
+ 1549  ls -ltr 
+ 1550  cd private/
+ 1551  ls
+ 1552  cd ..
+ 1553  cd certs/
+ 1554  ls
+ 1555  ls -ltr 
+ 1556  cd /etc/apache2/sites-available/
+ 1557  ls -ltr 
+ 1558  vim learning.corecard.in.conf
+ 1559  cd ..
+ 1560  cat /etc/apache2/sites-enabled/learning.corecard.in.conf_bkup 
+ 1561  cd /etc/apache2/sites-enabled/
+ 1562  ls
+ 1563  mv learning.corecard.in.conf_bkup learning.corecard.in.conf_bkup1
+ 1564  mv learning.corecard.in.conf_bkup1 learning.corecard.in.conf_bkup
+ 1565  cp learning.corecard.in.conf_bkup learning.corecard.in.conf_bkup1
+ 1566  ls
+ 1567  mv learning.corecard.in.conf_bkup learning.corecard.in.conf
+ 1568  ls
+ 1569  cat learning.corecard.in.conf
+ 1570  ls
+ 1571  cp learning.corecard.in.conf ../sites-available/
+ 1572  ls -ltr 
+ 1573  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf
+ 1574  ls -ltr 
+ 1575  chmod 777 learning.corecard.in.conf
+ 1576  ls -ltr 
+ 1577  cd ..
+ 1578  cd sites-available/
+ 1579  ls -ltr 
+ 1580  mv learning.corecard.in.conf bakup172023learning.corecard.in.conf
+ 1581  ls -ltr 
+ 1582  cd ..
+ 1583  cd -
+ 1584  cd ../sites-enabled/
+ 1585  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf
+ 1586  ls -ltr 
+ 1587  rm -rf learning.corecard.in.conf
+ 1588  cd -
+ 1589  ln -s learning.corecard.in.conf ../sites-enabled/learning.corecard.in.conf
+ 1590  ls -ltr 
+ 1591  cd ..
+ 1592  cd sites-enabled/
+ 1593  ls
+ 1594  ls -ltr 
+ 1595  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf
+ 1596  rm -rf /sites-available/learning.corecard.in.conf
+ 1597  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf
+ 1598  ls -ltr 
+ 1599  update-db
+ 1600  updatedb
+ 1601  enable learning.corecard.in.conf
+ 1602  ls -ltr 
+ 1603  rm -rf learning.corecard.in.conf
+ 1604  ls -ltr 
+ 1605  cd ../sites-available/
+ 1606  ls
+ 1607  ls -ltr 
+ 1608  rm -rf learning.corecard.in.conf
+ 1609  ls -ltr 
+ 1610  cp  bakup172023learning.corecard.in.conf learning.corecard.in.conf
+ 1611  ls -ltr 
+ 1612  ln -s learning.corecard.in.conf ../sites-enabled/learning.corecard.in.conf
+ 1613  ls -l 
+ 1614  ls -ltr 
+ 1615  cd ..
+ 1616  cd sites-enabled/
+ 1617  ls
+ 1618  ls -ltr 
+ 1619  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf 
+ 1620  systemctl restart apache
+ 1621  systemctl status apache2
+ 1622  systemctl stop apache2
+ 1623  ls -ltr 
+ 1624  vim learning.corecard.in.conf
+ 1625  cd ..
+ 1626  cd sites-available/
+ 1627  ls
+ 1628  vim learning.corecard.in
+ 1629  vim learning.corecard.in.conf
+ 1630  cd ..
+ 1631  cd sites-enabled/
+ 1632  rm -rf learning.corecard.in.conf
+ 1633  cd -
+ 1634  cd sites-available/
+ 1635  ls 
+ 1636  vim learning.corecard.in
+ 1637  enable learning.corecard.in.conf
+ 1638  ls -ltr 
+ 1639  vim learning.corecard.in
+ 1640  vim learning.corecard.in.conf
+ 1641  site-enable learning.corecard.in.conf
+ 1642  a2ensite learning.corecard.in.conf
+ 1643  systemctl reload apache2
+ 1644  systemctl start apache2
+ 1645  systemctl reload apache2
+ 1646  systemctl status apache2
+ 1647  ls -ltr 
+ 1648  cd ..
+ 1649  cd sites-enabled/
+ 1650  ls
+ 1651  ls -ltr 
+ 1652  cat learning.corecard.in.conf
+ 1653  cd /etc/certificate
+ 1654  ls -ltr 
+ 1655  cat new_16bea7bd6a812fe9.crt
+ 1656  ls -ltr
+ 1657  cp new_16bea7bd6a812fe9.crt learning.corecard.crt
+ 1658  cp gd_bundle-g2-g1_new.crt gd_bundle-g2-g1.crt 
+ 1659  systemctl restart apache
+ 1660  systemctl status apache2
+ 1661  systemctl stop apache2
+ 1662  systemctl restart apache
+ 1663  systemctl start apache2
+ 1664  systemctl status apache2
+ 1665  ls -ltr 
+ 1666  ls -ltr /etc/apache2/sites-available/
+ 1667  history 
+ 1668  apt-get update
+ 1669  sudo mkdir /mnt/cdrom
+ 1670  sudo mount /dev/cdrom /mnt/cdrom
+ 1671  ls /mnt/cdrom
+ 1672  tar xzvf /mnt/cdrom/VMwareTools-10.3.5-10430147.tar.gz -C /tmp/
+ 1673  cd /tmp/vmware-tools-distrib/
+ 1674  sudo ./vmware-install.pl
+ 1675  apt-get upgrade
+ 1676  apt-get update
+ 1677  sudo sed -i -e 's|disco|focal|g' /etc/apt/sources.list
+ 1678  sudo apt update
+ 1679  cp /etc/apt/sources.list /etc/apt/sources.list.bak
+ 1680  sudo sed -i -re 's/([a-z]{2}.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+ 1681  sudo apt-get update && sudo apt-get dist-upgrade
+ 1682  apt-get update
+ 1683  sudo apt install open-vm-tools-desktop
+ 1684  reboot
+ 1685  systemctl status apache2
+ 1686  systemctl start apache2
+ 1687  journalctl -xeu apache2.service
+ 1688  systemctl start apache2
+ 1689  systemctl status apache2.service
+ 1690  systemctl start apache2.service
+ 1691  ps -ef | grep apache
+ 1692  systemctl status apache2
+ 1693  systemctl start apache2
+ 1694  kill -9 6476
+ 1695  ps -ef | grep apache
+ 1696  kill -9 6299
+ 1697  systemctl status apache2
+ 1698  vim /etc/apache2/apache2.conf
+ 1699  cd /etc/apache2/
+ 1700  ls -ltr 
+ 1701  rpm -qa | grep php
+ 1702  php ---version 
+ 1703  php -V
+ 1704  php - v
+ 1705  php -v
+ 1706  lsb_release -a
+ 1707  systemctl start apache2
+ 1708  journalctl -xeu apache2.service
+ 1709  ip add
+ 1710  journalctl -xeu apache2.service
+ 1711  apt install -y libapache2-mod-php7.4
+ 1712  php -v
+ 1713  apt install -y libapache2-mode-php7.4
+ 1714  apache2ctl configtest
+ 1715  a2enmod php8.1
+ 1716  a2dismod php7.4
+ 1717  a2enmod php8.1
+ 1718  systemctl restart apache
+ 1719  history 
+ 1720  systemctl start apache2
+ 1721  systemctl status apache2
+ 1722  cd /usr/lib
+ 1723  ls
+ 1724  cd php/
+ 1725  ls
+ 1726  history 
+ 1727  a2dismod php8.1
+ 1728  systemctl restart apache
+ 1729  a2enmod php7.4
+ 1730  systemctl restart apache2
+ 1731  apt-get purge php8.*
+ 1732  apt-get update 
+ 1733  apt -y install software-properties-com
+ 1734  apt -y install php7.4
+ 1735  apt-get install php7.4
+ 1736  systemctl restart apache2
+ 1737  systemctl status apache2
+ 1738  a2enmod php8.4
+ 1739  history 
+ 1740  a2enmod php8.1
+ 1741  apache2ctl configtest
+ 1742  vim /etc/apache2/apache2.conf
+ 1743  cd ..
+ 1744  cd /etc/apache2/
+ 1745  cd sites-enabled/
+ 1746  ls
+ 1747  vim learning.corecard.in.conf
+ 1748  enable learning.corecard.in.conf
+ 1749  cd ..
+ 1750  cd sites-available/
+ 1751  ls -ltr 
+ 1752  vim learning.corecard.in.conf
+ 1753  php -v
+ 1754  /etc/init.d/apache1 status
+ 1755  /etc/init.d/apache2 start
+ 1756  curl https://learning.corecard.in
+ 1757  locate *.php
+ 1758  mlocate *.php
+ 1759  apt-get install locate
+ 1760  history 
+ 1761  ln -s learning.corecard.in.conf ../sites-available/learning.corecard.in.conf
+ 1762  a2ensite learning.corecard.in.conf
+ 1763  a2enmod php8.4
+ 1764  a2enmod php8.1
+ 1765  ls -ltr 
+ 1766  cd /etc/apache2/ls
+ 1767  cd /etc/apache2/
+ 1768  ls
+ 1769  ls -ltr 
+ 1770  vim apache2.conf
+ 1771  cd mods-enabled/
+ 1772  ls
+ 1773  ls -ltr 
+ 1774  cd ../mods-available/
+ 1775  ls
+ 1776  ls -ltr 
+ 1777  vim php8.1.conf 
+ 1778  cd ..
+ 1779  ls -ltr 
+ 1780  cd mods-enabled/
+ 1781  ls
+ 1782  vim php7.4.conf 
+ 1783  ls -ltr 
+ 1784  cd /etc/apache2/mods-enabled/
+ 1785  ls -ltr 
+ 1786  yum install php 
+ 1787  apt-get install php 
+ 1788  php -v
+ 1789  ls -ltr
+ 1790  history 
+ 1791  a2enmod php8.1
+ 1792  php --help
+ 1793  a2dismod php7.4
+ 1794  php -v
+ 1795  a2enmod php8.1 
+ 1796  systemctl restart apache2
+ 1797  cd..
+ 1798  cd ..
+ 1799  a2enmod php8.1 
+ 1800  systemctl restart apache2
+ 1801  apt-get install php7.4
+ 1802  php ---version 
+ 1803  php-v
+ 1804  php -v
+ 1805  systemctl restart apache2
+ 1806  /etc/init.d/apache1 status
+ 1807  systemctlstatus apache2
+ 1808  systemctl status apache2
+ 1809  curl https://learning.corecard.in
+ 1810  curl http://learning.corecard.in
+ 1811  cear 
+ 1812  clea 
+ 1813  clear 
+ 1814  <html><head>
+ 1815  <title>301 Moved Permanently</title>
+ 1816  </head><body>
+ 1817  <h1>Moved Permanently</h1>
+ 1818  <p>The document has moved <a href="https://learning.corecard.in/">here</a>.</p>
+ 1819  <hr>
+ 1820  <address>Apache/2.4.52 (Ubuntu) Server at learning.corecard.in Port 80</address>
+ 1821  apt install php8.1-pgsql
+ 1822  phpenmod -v 8.1 pgsql
+ 1823  services php8.1-fpm restart 
+ 1824  service php8.1-fpm restart 
+ 1825  service php8.1 -fpm restart 
+ 1826  service php8.1-fpm restart 
+ 1827  services apache2 restart 
+ 1828  service apache2 restart 
+ 1829  history 
+ 1830  service php8.1-fpm status
+ 1831  apt install php8.1-dom
+ 1832  service php8.1-fpm status
+ 1833  service php8.1-fpm restart 
+ 1834  service apache2 restart 
+ 1835  cd /var/log/apache2/
+ 1836  ls
+ 1837  ls -ltr 
+ 1838  vim error.log
+ 1839  php -v
+ 1840  ls -la
+ 1841  pwd
+ 1842  cd /etc
+ 1843  ls
+ 1844  php
+ 1845  cd /php
+ 1846  ls -la
+ 1847  ls -ltr
+ 1848  chmod -r php
+ 1849  ls -ltr
+ 1850  cd php/ 
+ 1851  ls -ltr
+ 1852  cd 8.1/
+ 1853  ls -ltr
+ 1854  /var/log/apache2/
+ 1855  /var/log/apache2/error.logs
+ 1856  cd /var/log/apache2/
+ 1857  ls
+ 1858  ls -l
+ 1859  cat error.log
+ 1860  cat error.log |more
+ 1861  cat access.log |more
+ 1862  ls -l
+ 1863  cat access.log.1 |more
+ 1864  cd ..
+ 1865  ls -l
+ 1866  cd /
+ 1867  cd ..
+ 1868  cd
+ 1869  pwd
+ 1870  cd etc
+ 1871  cd /etc
+ 1872  ls 
+ 1873  cd /var/log/apache2/
+ 1874  ls -l
+ 1875  cat access.log
+ 1876  cat access.log | more
+ 1877  ls -l
+ 1878  mv access.log access_9.log
+ 1879  ls -l
+ 1880  vi error.log
+ 1881  cd /
+ 1882  pwd
+ 1883  cd etc
+ 1884  cd apache2/
+ 1885  ls -l
+ 1886  cd sites-enabled/
+ 1887  ls -l
+ 1888  diff learning.corecard.in.conf learning.corecard.in.conf_bkup1 
+ 1889  diff learning.corecard.in.conf learning.corecard.in.conf_bkup1 | more
+ 1890  vi learning.corecard.in.conf_bkup1 
+ 1891  diff learning.corecard.in.conf learning.corecard.in.conf_bkup1 | more
+ 1892  vi learning.corecard.in.conf_bkup1 
+ 1893  diff learning.corecard.in.conf learning.corecard.in.conf_bkup1 | more
+ 1894  cd
+ 1895  cd /var/www/html/moodle vim config.php
+ 1896  cd /var/www/html/moodle
+ 1897  vim config.php 
+ 1898  /etc/php/7.4/
+ 1899  cd /etc/php/7.4/
+ 1900  ls -ltr
+ 1901  cd
+ 1902  php -v
+ 1903  a2dismod php8.1
+ 1904  a2enmod php7.4
+ 1905  apt install php7.4 libapache2-mod-php7.4
+ 1906  add-apt-repository ppa:ondrej/php
+ 1907  apt install php7.4 libapache2-mod-php7.4
+ 1908  service apache2 restart 
+ 1909  apt install php7.4 -pgsql
+ 1910  apt install php7.4-pgsql
+ 1911  phpenmod -v 7.4 pgsql
+ 1912  service php7.4-fpm restart
+ 1913  service apache2 restart 
+ 1914  sudo apt install php7.4-dom
+ 1915  service apache2 restart 
+ 1916  php -v
+ 1917  cat /etc/apache2/sites-available/learning.corecard.in.conf
+ 1918  </VirtualHost>
+ 1919  # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+ 1920  <IfModule mod_ssl.c>
+ 1921  :q!
+ 1922  cat /etc/apache2/sites-available/learning.corecard.in.conf
+ 1923  history
+ 1924  systemctl status apache2
+ 1925  /var/www/html/moodle
+ 1926  cd /var/www/html/moodle
+ 1927  ls
+ 1928  sudo -u www-data php admin/cli/maintenance.php --enable
+ 1929  sudo -u www-data php admin/cli/purge_caches.php
+ 1930  www-data php admin/cli/purge_caches.php
+ 1931  php admin/cli/purge_caches.php
+ 1932  php -v
+ 1933  a2dismod php7.4
+ 1934  systemctl restart apache2
+ 1935  a2enmod php8.1
+ 1936  systemctl restart apache2
+ 1937  php admin/cli/purge_caches.php
+ 1938  systemctl restart apache2
+ 1939  a2dismod php8.1
+ 1940  systemctl restart apache2
+ 1941  a2enmod php7.4
+ 1942  systemctl restart apache2
+ 1943  enable learning.corecard.in.conf
+ 1944  a2ensite learning.corecard.in.conf
+ 1945  history > a.txt
